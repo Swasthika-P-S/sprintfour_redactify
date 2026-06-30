@@ -33,8 +33,9 @@ app.get('/api/health', (req, res) => res.json({ status: 'ok', app: 'VEILiq' }));
 app.use(errorHandler);
 
 // Connect to MongoDB
+const uri = "mongodb+srv://swas123:swas123@cluster0.nym0n.mongodb.net/privacylens?retryWrites=true&w=majority";
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(process.env.MONGO_URI || uri)
   .then(async () => {
     console.log('MongoDB connected');
     // Seed default policy templates if none exist
