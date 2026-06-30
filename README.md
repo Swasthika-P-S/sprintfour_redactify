@@ -1,4 +1,4 @@
-# 🛡️ VEILiq – Intelligent Redaction Review System
+# 🛡️VEILiq – Intelligent Redaction Review System
 
 > A full-stack application that detects, reviews, and corrects sensitive information (PII) before documents are shared with AI models.
 
