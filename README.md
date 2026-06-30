@@ -1,4 +1,4 @@
-# 🛡️ PII Guardian – Intelligent Redaction Review System
+# 🛡️ VEILiq – Intelligent Redaction Review System
 
 > A full-stack application that detects, reviews, and corrects sensitive information (PII) before documents are shared with AI models.
 
@@ -6,7 +6,7 @@ PII Guardian solves the problem of security and privacy leakage by allowing user
 
 ---
 
-## 🎨 Tech Stack & Architecture
+## Tech Stack & Architecture
 
 - **Frontend**: React (JS), Axios, Vanilla CSS (custom design system)
 - **Backend**: Node.js, Express.js
@@ -15,7 +15,7 @@ PII Guardian solves the problem of security and privacy leakage by allowing user
 
 ---
 
-## 🚀 Key Features (WOW Factors for Judges)
+## Key Features
 
 1. **Sage-Green Premium UI**: Clean, minimal, modern aesthetic using CSS variables, micro-animations, and responsive cards.
 2. **Hybrid Detection Engine**: Combines the absolute precision of regexes (for standard formats like PAN, Aadhaar, Emails, Phone) with the semantic power of Google Gemini AI (for Names, Addresses, and Organizations).
@@ -70,11 +70,3 @@ PII Guardian solves the problem of security and privacy leakage by allowing user
 4. Open your browser to `http://localhost:3000`.
 
 ---
-
-## 📸 Presentation Walkthrough & Q&A Prep
-
-### Q: Why not use AI for everything?
-> **A**: Cost and speed. Standard PII formats (Emails, Phone, PAN) have well-defined structures. Using a hybrid pipeline runs fast regex patterns locally in milliseconds, reserving costly AI LLM API calls solely for unstructured context like Names and Addresses.
-
-### Q: How does the editing work?
-> **A**: The system maps each PII to its index in the text. When accepted, it replaces the target text with the redaction placeholder (e.g. `[NAME]`). If the user edits the replacement to a custom label (e.g. `[CLIENT_A]`), the rendering engine updates dynamically and keeps indexes accurate.
